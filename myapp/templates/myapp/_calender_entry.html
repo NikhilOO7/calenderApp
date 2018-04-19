@@ -1,0 +1,16 @@
+<!-- <div class="calender_entry col-lg-4">
+	<h2>Example Name</h2>
+	<h4>16th MAY 2018</h4>
+	<p>
+		This is an aweosme event where I am going to meet a lot of people.
+	</p>
+	<button class="btn btn-primary"> View Details </button>
+</div> -->
+<div class="calender_entry col-lg-4">
+	<h2> {{ entry.name }} </h2>
+	<h4>{{ entry.date }}</h4>
+	<p>
+		{{ entry.description }}
+	</p>
+	<button onclick="window.location='{% url "details"pk=entry.id %}'" class="btn btn-primary"> View Details </button>
+</div>
